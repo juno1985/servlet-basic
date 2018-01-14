@@ -2,6 +2,7 @@ package servlet.demo;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.net.URLEncoder;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -29,7 +30,8 @@ public class ServletDemo extends HttpServlet {
 		webWriter.write("</body>");
 		webWriter.write("</html>");*/
 		
-		Cookie ucookie = new Cookie("username",username);
+		resp.setContentType("text/html;charset=UTF-8");
+		Cookie ucookie = new Cookie("username",URLEncoder.encode(username, "UTF-8"));
 		Cookie pcookie = new Cookie("password",password);
 		
 		ucookie.setMaxAge(3600);
