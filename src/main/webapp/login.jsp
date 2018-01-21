@@ -8,6 +8,13 @@
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" 
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
 		crossorigin="anonymous">
+		
+<script type="text/javascript">
+	function uppercase(x){
+		var y=document.getElementById(x).value
+		document.getElementById(x).value=y.toUpperCase()
+	}
+</script>
 <title>IT沙龙后台管理登录</title>
 
 
@@ -23,7 +30,8 @@
 		<form id="login" method="post" action="/demo/paramServlet">
 		  <div class="form-group">
 		    <label for="exampleInputEmail1"> 用戶</label>
-		    <input type="text"  class="form-control" name="username"  placeholder="請輸入賬戶">
+		    <input id="inUser" type="text"  class="for
+		    m-control" name="username"  placeholder="請輸入賬戶" onchange="uppercase(this.id)">
 		    <small id="emailHelp" class="form-text text-muted">密碼必填</small>
 		  </div>
 		  <div class="form-group">

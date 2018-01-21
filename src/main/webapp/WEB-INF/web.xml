@@ -4,6 +4,18 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+   <filter>
+  	<filter-name>log</filter-name>
+  	<filter-class>servletdemo.LogFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>log</filter-name>
+  	<!-- Filter负责拦截的URL -->
+  	<servlet-name>*</servlet-name>
+  </filter-mapping>
+  
  <!--  <servlet>
   	<servlet-name>servletDemo</servlet-name>
   	<servlet-class>servlet.demo.ServletDemo</servlet-class>
@@ -21,5 +33,7 @@
   	<servlet-name>drawCheckCode</servlet-name>
   	<url-pattern>/CheckinDrawer</url-pattern>
   </servlet-mapping>
+  
+  
   
 </web-app>
