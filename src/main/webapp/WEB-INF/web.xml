@@ -13,30 +13,6 @@
   	<servlet-class>servlet.demo.CheckinDrawer</servlet-class>
   </servlet>
   
-  <servlet>
-  	<servlet-name>paramTest</servlet-name>
-  	<servlet-class>servletdemo.ParamServlet</servlet-class>
-  	<init-param>
-  		<param-name>driver</param-name>
-  		<param-value>com.mysql.jdbc.Driver</param-value>
-  	</init-param>
-  	<init-param>
-  		<param-name>url</param-name>
-  		<param-value>jdbc:mysql://localhost:3306/test</param-value>
-  	</init-param>
-  	<init-param>
-  		<param-name>user</param-name>
-  		<param-value>root</param-value>
-  	</init-param>
-  	<init-param>
-  		<param-name>pass</param-name>
-  		<param-value>123456</param-value>
-  	</init-param>
-  </servlet>
-   <servlet-mapping>
-  	<servlet-name>paramTest</servlet-name>
-  	<url-pattern>/paramServlet</url-pattern>
-  </servlet-mapping>
  <!--  <servlet-mapping>
   	<servlet-name>servletDemo</servlet-name>
   	<url-pattern>/ServletDemo</url-pattern>
