@@ -1,0 +1,13 @@
+use test;
+
+create table t_user (
+id int auto_increment,
+name varchar(10),
+primary key(id)
+)
+
+insert into t_user(name) values("Mark");
+
+alter table t_user add column passwd varchar(10);
+
+update t_user set passwd="123456" where id = 1;
