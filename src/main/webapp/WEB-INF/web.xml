@@ -19,20 +19,6 @@
   	<listener-class>servletdemo.ContextAttrListener</listener-class>
   </listener>
   
-  <listener>
-  	<listener-class>servletdemo.ContextAttrListener</listener-class>
-  </listener>
-  
-  
-  
-  
-  
-  
-  <!-- http://localhost:9999/demo/ 主站地址默认页面 -->
-  <welcome-file-list>
-  	<welcome-file>welcome.jsp</welcome-file>
-  </welcome-file-list>
-  
   
  <!--  <servlet>
   	<servlet-name>servletDemo</servlet-name>
@@ -52,6 +38,9 @@
   	<url-pattern>/CheckinDrawer</url-pattern>
   </servlet-mapping>
   
-  
+  <!-- http://localhost:9999/demo/ 主站地址默认页面 -->
+  <welcome-file-list>
+  	<welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
   
 </web-app>
