@@ -44,6 +44,8 @@ public class ServletDemo extends HttpServlet {
 		resp.sendRedirect("readCookie.jsp");
 
 	}
+	
+	
 
 	
 }
